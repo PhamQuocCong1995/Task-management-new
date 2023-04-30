@@ -1333,6 +1333,7 @@ a {
     border-radius: 19px;
 }
 
+.product__sidebar-dots,
 .product__dtask-dots,
 .product__daily-dots,
 .product__desktop-dots {
@@ -1341,6 +1342,7 @@ a {
     justify-content: flex-end;
 }
 
+.product__sidebar-dot,
 .product__dtask-dot,
 .product__daily-dot,
 .product__desktop-dot {
@@ -1621,4 +1623,98 @@ a {
 
 .product__dtask-offline span:nth-child(2) {
     color: #ff7667;
+}
+
+.product__sidebar {
+    padding: 26px;
+    background: #191b1d;
+    border-radius: 19px;
+}
+
+.product__sidebar-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__sidebar-heading {
+    position: relative;
+    font-weight: 600;
+    font-size: 2.2rem;
+    color: #ffffff;
+}
+
+.product__sidebar-heading::after {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 4px;
+    background: #ff7667;
+    right: -6px;
+    bottom: 4px;
+    border-radius: 50%;
+}
+
+.product__sidebar-list {
+    margin-top: 21px;
+}
+
+.product-itembar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #25282b;
+    margin-top: 14px;
+}
+
+.product-itembar:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.product-itembar__img {
+    position: relative;
+    width: 34px;
+    height: 34px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.product-itembar__name {
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-left: 9px;
+}
+
+.product-itembar__online {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #6aea5c;
+    border-radius: 50%;
+    top: 22px;
+    left: 30px;
+}
+
+.product-online {
+    width: 5px;
+    height: 5px;
+    background: #23d12a;
+    border-radius: 50%;
+}
+
+.product__sidebar-btn {
+    width: 129px;
+    height: 37px;
+    background: #ef8f00;
+    border-radius: 7px;
+    margin-top: 32px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-left: 13px;
 }
