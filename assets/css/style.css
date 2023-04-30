@@ -1718,3 +1718,119 @@ a {
     color: #ffffff;
     margin-left: 13px;
 }
+
+/* Explore */
+.explore {
+    position: relative;
+    margin-top: 140px;
+}
+
+.explore::after {
+    position: absolute;
+    content: "";
+    width: 1009px;
+    height: 1px;
+    background: #282c30;
+    bottom: -70px;
+    margin: 0 auto;
+}
+
+.explore__top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.explore__heading {
+    width: 493px;
+}
+
+.explore__heading strong {
+    background: linear-gradient(90deg, #eb9204 -33.14%, #83e868 116.38%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.explore__btn {
+    min-width: 218px;
+    height: 68px;
+    background: #131517;
+    border: 2px solid #36383e;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    background: linear-gradient(90deg, #eb9204 -33.14%, #83e868 116.38%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 27px 98px 0 0;
+}
+
+.explore__bottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 55px;
+    margin-top: 23px;
+}
+
+.explore-objects {
+    width: 45%;
+}
+
+.explore-object {
+    width: 493px;
+    height: 158px;
+    border: 2px solid #282c30;
+    border-radius: 15px;
+    background: transparent;
+    padding: 29px 24px 22px 40px;
+    margin-top: 16px;
+    transition: 0.25s;
+}
+
+.explore-object:first-child {
+    margin-top: 44px;
+}
+
+.explore-object:hover {
+    background: #282c30;
+}
+
+.explore-object__heading {
+    font-weight: 600;
+    font-size: 2.8rem;
+    line-height: 35px;
+    color: #f9f9f9;
+}
+
+.explore-object__desc {
+    width: 388px;
+    font-weight: 400;
+    font-size: 1.6rems;
+    line-height: 1.5;
+    color: #858b93;
+    margin-top: 9px;
+}
+
+.explore-img {
+    width: 348px;
+    height: 263px;
+    object-fit: cover;
+    box-shadow: 0px 4px 68px 19px rgba(0, 0, 0, 0.6);
+    border-radius: 31px;
+    border: 1px solid #eb9204;
+}
+
+.explore-img:nth-child(1) {
+    margin-right: 200px;
+}
+
+.explore-img:nth-child(2) {
+    margin: -103px 0 0 200px;
+}
+
+.explore-img:nth-child(3) {
+    margin: -71px 0 0 25px;
+}
