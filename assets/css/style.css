@@ -1725,16 +1725,6 @@ a {
     margin-top: 140px;
 }
 
-.explore::after {
-    position: absolute;
-    content: "";
-    width: 1009px;
-    height: 1px;
-    background: #282c30;
-    bottom: -70px;
-    margin: 0 auto;
-}
-
 .explore__top {
     display: flex;
     align-items: flex-start;
@@ -1833,4 +1823,139 @@ a {
 
 .explore-img:nth-child(3) {
     margin: -71px 0 0 25px;
+}
+
+.explore__border {
+    width: 1009px;
+    height: 1px;
+    background: #282c30;
+    margin: 70px auto 0;
+}
+
+/* Refesh */
+.refesh {
+    margin-top: 70px;
+}
+
+.refesh__heading {
+    width: 512px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.refesh__heading strong {
+    background: linear-gradient(90deg, #eb9204 -33.14%, #83e868 116.38%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.refesh-list {
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 26px;
+}
+
+.refesh-item {
+    padding: 21px;
+    background: #282c30;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.refesh-item__top {
+    position: relative;
+}
+
+.refesh-item__img {
+    width: 307px;
+    height: 254px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.refesh-item__job {
+    position: absolute;
+    width: 139px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(54.5px);
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    top: 193px;
+    left: 84px;
+    transition: 0.25s;
+}
+
+.refesh-item__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 52px;
+}
+
+.refesh-item__bottom blockquote {
+    width: 190px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.62;
+    color: #f9f9f9;
+}
+
+.refesh-item__bar {
+    position: relative;
+    width: 238px;
+    height: 7px;
+    background: #313538;
+    border-radius: 23px;
+    margin-top: 18px;
+}
+
+.refesh-item__bar::after,
+.refesh-item__bar-design::after,
+.refesh-item__bar-tutorial::after {
+    position: absolute;
+    content: "";
+    border-radius: 23px;
+}
+
+.refesh-item__bar::after {
+    width: 55px;
+    height: 7px;
+    background: #ff7667;
+}
+
+.refesh-item__bar-design::after {
+    width: 101px;
+    height: 7px;
+    background: #0cce84;
+}
+
+.refesh-item__bar-tutorial::after {
+    width: 26px;
+    height: 7px;
+    background: #ef8f00;
+}
+
+.refesh-item__viewall {
+    margin-top: 24px;
+    text-align: right;
+    margin-right: 29px;
+}
+
+.refesh-item__viewall span {
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: rgba(133, 139, 147, 0.6);
 }
